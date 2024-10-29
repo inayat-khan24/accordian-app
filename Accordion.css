@@ -1,0 +1,51 @@
+
+*{
+
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+
+.maninBox{
+width: 50%;
+height: auto;
+border: 1px solid red;
+margin: 20px;
+}
+.title1{
+
+    background-color: orangered;
+    padding: 10px;
+    display: block;
+    cursor: pointer;
+   
+}
+
+.title1:hover{
+
+background-color: rgb(218, 128, 96);
+
+}
+
+.para{
+padding: 10px;
+
+display: none;
+
+
+}
+
+.innerBox.active .para{
+
+display: block;
+
+}
+
+.innerBox{
+
+margin-bottom: 2px;
+
+
+}

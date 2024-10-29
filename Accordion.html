@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Accordion.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="maninBox">
+    
+    <div class="innerBox">
+<h2 class="title1 "> Accordion menu 1 </h2>
+<p class="para"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+    Saepe sit accusantium nam cumque cupiditate expedita maiores 
+    veniam necessitatibus autem repudiandae?</p>
+</div>
+
+<div class="innerBox">
+    <h2 class="title1  "> Accordion menu 2 </h2>
+    <p class="para"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+        Saepe sit accusantium nam cumque cupiditate expedita maiores 
+        veniam necessitatibus autem repudiandae?</p>
+    </div>
+
+    <div class="innerBox">
+        <h2 class="title1"> Accordion menu 3 </h2>
+        <p class="para"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Saepe sit accusantium nam cumque cupiditate expedita maiores 
+            veniam necessitatibus autem repudiandae?</p>
+        </div>
+
+
+
+
+    
+</div>
+
+
+<script>
+
+let AccordionIteam = document.querySelectorAll(".innerBox");
+
+
+
+
+
+AccordionIteam.forEach(iteam=>{
+let titles = iteam.querySelector('.title1');
+let contain = iteam.querySelector('.para');
+
+titles.addEventListener("click",(e)=>
+{
+
+for ( var i = 0; i < AccordionIteam.length; i++)
+
+{
+    if(AccordionIteam[i] !== iteam)
+{
+     AccordionIteam[i].classList.remove("active")
+}
+
+
+else{
+    iteam.classList.toggle("active")
+
+
+}
+} // for loop end
+
+
+}) // add event lisner
+
+
+
+}) // forEach lop
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
